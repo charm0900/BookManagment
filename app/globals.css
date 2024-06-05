@@ -115,7 +115,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 150px;
+  padding-top: 50px;
   padding-bottom: 50px;
 }
 
@@ -239,8 +239,14 @@ ul {
 
 /* prevents y scroll on book info when screen is shrunk*/
 @media only screen and (max-width: 850px){
-  .bookInfo {
+  /* .bookInfo {
     height: fit-content;
-  } 
+  }  */
+  .bookItem {
+    width: 75vw;
+  }
+  .heading {
+    width: 75vw;
+  }
 }
 
