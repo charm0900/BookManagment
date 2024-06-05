@@ -97,7 +97,7 @@ export default function Home() {
               <input placeholder="ISBN" className="input" name="myInput" value={isbn} onChange={isbnOnChange} maxLength={13}/>
               <br />
               <br />
-              <button className="addButton" onClick={() => {isbnSubmit()}}>{!fetching ? "Add Book" : "Fetching..."}</button>
+              <button className="addButton" disabled={fetching} onClick={() => {isbnSubmit()}}>{!fetching ? "Add Book" : "Fetching..."}</button>
             </div>
           </div>
             <ul style={styles.ul}>
