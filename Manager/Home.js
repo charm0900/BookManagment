@@ -57,10 +57,12 @@ export default function Home() {
    * @param {array to find isbn in} array 
    * @returns true if isbn in array, false otherwise
    */
-  function findByIsbn(isbn, array){
-    for (let i = 0; i < array.length; i++) {
-      const elm = array[i];
-        if (elm.isbnArray.find((bookIsbn) => (bookIsbn === isbn))){
+  function findByIsbn(isbn, list){
+    for (let i = 0; i < list.length; i++) {
+      const elm = list[i];
+        if (elm.isbnArray?.find((bookIsbn) => (bookIsbn === isbn))){ // if book has multiple isbns do not re add it to list
+          return true;
+        }else if (elm.isbn === isbn){
           return true;
         }
     }

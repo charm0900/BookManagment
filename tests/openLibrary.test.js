@@ -1,36 +1,36 @@
-// const  {isbnSearch }  = require('../utils/openLibrary');
+const  {isbnSearch }  = require('../utils/openLibrary');
 
-// test('Test valid reuqest to open library api', async () => {
-//     const cb = (data) =>{
-//         // expect(data.success).toBe(true);
-//         // expect(data.book.title).toBe("Goosebumps - The Cuckoo Clock of Doom");
-//         // expect(data.book.author[0]).toBe("R. L. Stine ");
-//         // expect(data.book.rating).toBe(0);
-//         // expect(data.book.isbn).toBe("9780439568265");
+test('Test valid reuqest to open library api', async () => {
+    const cb = (data) =>{
+        // expect(data.success).toBe(true);
+        // expect(data.book.title).toBe("Goosebumps - The Cuckoo Clock of Doom");
+        // expect(data.book.author[0]).toBe("R. L. Stine ");
+        // expect(data.book.rating).toBe(0);
+        // expect(data.book.isbn).toBe("9780439568265");
 
 
-//     }
-//     // await expect(isbnSearch("9780439568265", cb)).resolves.toBe('Paul');
+    }
+    // await expect(isbnSearch("9780439568265", cb)).resolves.toBe('Paul');
 
     
-//     // expect(isbnSearch("0716703440")).toBe(true);
+    // expect(isbnSearch("0716703440")).toBe(true);
 
-//     // expect(isbnVaild("0596520689")).toBe(true);
+    // expect(isbnVaild("0596520689")).toBe(true);
 
-//     // expect(isbnVaild("059048348x")).toBe(true);
+    // expect(isbnVaild("059048348x")).toBe(true);
 
-//     // expect(isbnVaild("059045370x")).toBe(true);
+    // expect(isbnVaild("059045370x")).toBe(true);
 
-//     // expect(isbnVaild("9780596520687")).toBe(true);
+    // expect(isbnVaild("9780596520687")).toBe(true);
 
-//     // expect(isbnVaild("97805965206875")).toBe(false);
+    // expect(isbnVaild("97805965206875")).toBe(false);
     
-//     // expect(isbnVaild("978059652068")).toBe(false);
+    // expect(isbnVaild("978059652068")).toBe(false);
 
-//     // expect(isbnVaild("97")).toBe(false);
+    // expect(isbnVaild("97")).toBe(false);
 
-//     // expect(isbnVaild("")).toBe(false);
-// });
+    // expect(isbnVaild("")).toBe(false);
+});
 
 // test('testing isbn input that are not all digits or x in last spot for 10', async () => { 
 //     // expect(isbnVaild("071670344g")).toBe(false);
